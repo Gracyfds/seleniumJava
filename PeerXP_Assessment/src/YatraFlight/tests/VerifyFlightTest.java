@@ -14,7 +14,10 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -35,8 +38,12 @@ public class VerifyFlightTest {
 	@BeforeTest
 	public void setdriver()
 	{
+		ChromeOptions options = new ChromeOptions();
+
+		options.addArguments("--disable-notifications");
+
 		System.setProperty("webdriver.chrome.driver", "D:\\Selenium-Workspace\\Selenium_Learning\\Drivers\\chromedriver.exe");
-		driver =new ChromeDriver();
+		driver =new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
@@ -47,8 +54,12 @@ public class VerifyFlightTest {
 	public void laun() throws InterruptedException
 	{
 		driver.get("https://www.yatra.com/");
+		
 		Assert.assertEquals(driver.getTitle(), "Flight, Cheap Air Tickets , Hotels, Holiday, Trains Package Booking - Yatra.com");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+
+		//driver.switchTo().alert().dismiss();
+
 		
 	}
 	@Test(priority=2)
