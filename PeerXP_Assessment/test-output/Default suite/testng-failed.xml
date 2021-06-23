@@ -6,9 +6,8 @@
       <class name="YatraFlight.tests.VerifyFlightTest">
         <methods>
           <include name="terminate"/>
+          <include name="laun"/>
           <include name="setdriver"/>
-          <include name="Selectdate"/>
-          <include name="searchbtn"/>
         </methods>
       </class> <!-- YatraFlight.tests.VerifyFlightTest -->
     </classes>
