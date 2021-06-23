@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="117266" started-at="2021-06-23T21:53:42 IST" finished-at="2021-06-23T21:55:39 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="117266" started-at="2021-06-23T21:53:42 IST" finished-at="2021-06-23T21:55:39 IST">
+      <class name="YatraFlight.tests.VerifyFlightTest">
+        <test-method status="PASS" signature="setdriver()[pri:0, instance:YatraFlight.tests.VerifyFlightTest@14e1548]" name="setdriver" is-config="true" duration-ms="30689" started-at="2021-06-23T21:53:42 IST" finished-at="2021-06-23T21:54:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setdriver -->
+        <test-method status="PASS" signature="laun()[pri:1, instance:YatraFlight.tests.VerifyFlightTest@14e1548]" name="laun" duration-ms="25011" started-at="2021-06-23T21:54:13 IST" finished-at="2021-06-23T21:54:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- laun -->
+        <test-method status="PASS" signature="Departfrom()[pri:2, instance:YatraFlight.tests.VerifyFlightTest@14e1548]" name="Departfrom" duration-ms="8415" started-at="2021-06-23T21:54:38 IST" finished-at="2021-06-23T21:54:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Departfrom -->
+        <test-method status="PASS" signature="Selectdate()[pri:3, instance:YatraFlight.tests.VerifyFlightTest@14e1548]" name="Selectdate" duration-ms="3076" started-at="2021-06-23T21:54:47 IST" finished-at="2021-06-23T21:54:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Selectdate -->
+        <test-method status="PASS" signature="searchbtn()[pri:4, instance:YatraFlight.tests.VerifyFlightTest@14e1548]" name="searchbtn" duration-ms="45985" started-at="2021-06-23T21:54:50 IST" finished-at="2021-06-23T21:55:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchbtn -->
+        <test-method status="PASS" signature="terminate()[pri:0, instance:YatraFlight.tests.VerifyFlightTest@14e1548]" name="terminate" is-config="true" duration-ms="3626" started-at="2021-06-23T21:55:36 IST" finished-at="2021-06-23T21:55:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- YatraFlight.tests.VerifyFlightTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
